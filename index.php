@@ -231,7 +231,8 @@ if ($_SESSION['key']) {
                         -- Written by <a href="mailto:xergio@gmail.com">Sergio Álvarez</a> (<a href="https://twitter.com/xergio">@xergio</a>) 
                         and <a href="mailto:godsea@gmail.com">Jordi Rivero</a>. 
                         Using <a href="http://dbug.ospinto.com/">dBug</a>. 
-                        Permalinks stored for 1 year.</p>
+                        Permalinks stored for 1 year. 
+			<code><a href="https://github.com/xergio/xrg.es">Source code <img src="https://github.com/favicon.ico" width="12" height="12" /></a></code></p>
                 </div>
             </div>
         </div>
