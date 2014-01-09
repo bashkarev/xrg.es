@@ -1,0 +1,117 @@
+html, body {
+	height: 100%;
+}
+
+
+.tabs {
+	margin-top: 10px;
+	margin-bottom: 10px !important;
+	border-bottom: 1px solid #008cba;
+}
+
+.tabs dd > a {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1px;
+	margin-right: 1px;
+	font-weight: bold;
+}
+
+.tabs-content > .content {
+	padding: 0;
+}
+
+.tabs dd.active a {
+	background: #008cba;
+	color: white;
+}
+
+.tabs-content {
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
+
+h4 {
+font-size: 1.125rem;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type="text"], textarea {
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+.footer {
+	margin-top: 30px;
+	padding-bottom: 20px;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer p {
+	margin: 0;
+	font-size: .7rem;
+	color: #999999;
+}
+
+.results {
+	width: 100%;
+	background: #f7f7f7;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h3.error {
+	color: red;
+	font-weight: bold;
+}
+
+h3.ok {
+	color: green;
+	font-weight: bold;
+}
+
+code {
+	font-weight: normal;
+}
+
+#help ul {
+	font-size: .8em;
+}
+
+input.ok {}
+
+input.error, input[type="text"]:focus.error {
+	border-color: red;
+	background-color: #FFF2F2;
+}
+
+
+
+
+/* dBug */
+table { 
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+	border-spacing: 0;
+	display:table;
+	border-collapse:collapse;
+	margin-top: 20px;
+	margin-bottom: 0;
+	border: 0;
+}
+
+table table {
+	margin-top: 0;
+}
+
+table td { 
+	padding: 5px;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+td.dBug_arrayKey {
+	background-color:#dddddd;
+	text-align: right;
+}
