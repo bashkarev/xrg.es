@@ -196,7 +196,7 @@ class dBug {
 					$this->checkType($value);
 				else {
 					$value=(trim($value)=="") ? "[empty string]" : $value;
-					echo htmlentities($value);
+					echo "<pre>". htmlentities($value) ."</pre>";
 				}
 				echo $this->closeTDRow();
 			}
