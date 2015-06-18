@@ -5,7 +5,7 @@ require(dirname(__FILE__) ."/preg.php");
 
 session_start();
 
-$preg = new Preg();
+$preg = new Preg($_GET);
 
 if ($_SESSION['key']) {
     $redis = new Redis();
