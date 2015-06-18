@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" ng-app="appHash">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="md2, md4, md5, sha1, sha224, sha256, sha384, sha512, ripemd128, ripemd160, ripemd256, ripemd320, whirlpool, tiger128,3, tiger160,3, tiger192,3, tiger128,4, tiger160,4, tiger192,4, snefru, snefru256, gost, gost-crypto, adler32, crc32, crc32b, fnv132, fnv1a32, fnv164, fnv1a64, joaat, haval128,3, haval160,3, haval192,3, haval224,3, haval256,3, haval128,4, haval160,4, haval192,4, haval224,4, haval256,4, haval128,5, haval160,5, haval192,5, haval224,5, haval256,5">
+		<title>Real time Hashes - xrg.es/hash</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="cosmo.min.css">
+
+		<style type="text/css">
+		.main {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		textarea {
+			margin-bottom: 20px;
+		}
+		</style>
+
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+		<script src="hash.js"></script>
+	</head>
+
+	<body ng-controller="HashController">
+
+		<div class="container main">
+
+			<textarea class="form-control" placeholder="enter text here..." ng-model="plainText" name="plainText" ng-model-options="{ debounce: 250 }"  plain-text autofocus>{{$location.hash()}}</textarea>
+
+			<table class="table table-striped table-condensed" ng-show="hashes.length">
+				<thead>
+					<tr>
+						<th class="text-right">algorithm</th>
+						<th>value</th>
+						<th class="text-right">length</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="hash in hashes">
+						<td class="text-right">{{ hash.name }}</td>
+						<td>{{hash.value}}</td>
+						<td class="text-right">{{hash.length}}</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="text-center text-muted">
+				Real time hashes 
+				-- Written by <a href="mailto:xergio@gmail.com">Sergio Álvarez</a> (<a href="https://twitter.com/xergio">@xergio</a>).
+				<code><a href="https://github.com/xergio/xrg.es/tree/master/hash">Source code <img src="https://github.com/favicon.ico" width="12" height="12"></a></code>
+			</p>
+
+		</div>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-70198-2', 'xrg.es');
+ga('send', 'pageview');
+</script>
+
+	</body>
+</html>
